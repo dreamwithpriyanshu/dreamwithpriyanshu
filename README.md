@@ -13,10 +13,8 @@
 ```yaml
 name: Priyanshu Bisht
 aka: Dream with Priyanshu
-role: Full-Stack Developer & Creator
-focus: Shipping projects that solve real problems
-philosophy: "Ship fast, learn faster, iterate always"
-open_to: Collaborations · Open-source · Internships
+philosophy: "Ship fast, learn faster, Carpie Diem"
+open_to: Collaborations · Internships
 ```
 
 ---
