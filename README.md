@@ -3,9 +3,9 @@
 <img src="./banner.png" width="100%" alt="Dream with Priyanshu Banner" />
 </div>
 
-<!-- Animated typing greeting -->
+<!-- Animated typing greeting — no emojis, clean text -->
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=true&random=false&width=600&height=45&lines=%F0%9F%9A%80+Shipping+ideas+into+reality;%F0%9F%94%A5+Open+Source+%7C+Projects+%7C+Experiments;%F0%9F%92%A1+Always+building+something+new" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&repeat=true&random=false&width=620&height=45&lines=Shipping+ideas+into+reality;Open+Source+%C2%B7+Projects+%C2%B7+Experiments;Always+building+something+new" alt="Typing SVG" /></a>
 </div>
 
 <br>
@@ -22,60 +22,76 @@ philosophy: "Ship fast, learn faster, iterate always"
 open_to: Collaborations · Open-source contributions · Internships
 ```
 
-<br>
+<br><br>
 
-<!-- Tech stack icons grouped by category -->
-## ⚡ Tech Arsenal
+<!-- Tech stack — clean grid layout with skillicons -->
+## Tech Arsenal
 
 <div align="center">
 
 <table>
 <tr>
 <td align="center" width="25%">
+<br>
 
-**🎨 Frontend**
+<strong>Frontend</strong>
+
+<br><br>
 
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=html,css,js,react&theme=dark&perline=2" />
+<img src="https://skillicons.dev/icons?i=html,css,js,react&theme=dark&perline=2" alt="Frontend Skills" />
 </a>
 
+<br><br>
 </td>
 <td align="center" width="25%">
+<br>
 
-**🔧 Backend**
+<strong>Backend</strong>
+
+<br><br>
 
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=nodejs&theme=dark" />
+<img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="Backend Skills" />
 </a>
 
+<br><br>
 </td>
 <td align="center" width="25%">
+<br>
 
-**💻 Languages**
+<strong>Languages</strong>
+
+<br><br>
 
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=python,java&theme=dark&perline=2" />
+<img src="https://skillicons.dev/icons?i=python,java&theme=dark&perline=2" alt="Languages" />
 </a>
 
+<br><br>
 </td>
 <td align="center" width="25%">
+<br>
 
-**🛠️ Tools**
+<strong>Tools</strong>
+
+<br><br>
 
 <a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=git,github&theme=dark&perline=2" />
+<img src="https://skillicons.dev/icons?i=git,github&theme=dark&perline=2" alt="Tools" />
 </a>
 
+<br><br>
 </td>
 </tr>
 </table>
 
 </div>
 
-<br>
+<br><br>
 
-<!-- GitHub stats cards — shows commits, PRs, streak, top languages -->
-## 📊 GitHub Analytics
+<!-- GitHub stats cards — shows commits, stars, PRs, and top languages -->
+## GitHub Analytics
 
 <div align="center">
 
@@ -93,11 +109,11 @@ open_to: Collaborations · Open-source contributions · Internships
 
 </div>
 
-<br>
+<br><br>
 
-<!-- Snake animation — auto-generated via GitHub Actions (.github/workflows/snake.yml) -->
-<!-- Runs daily at midnight UTC, outputs SVGs to the "output" branch -->
-## 🐍 Contribution Snake
+<!-- Snake animation — auto-generated daily via GitHub Actions (.github/workflows/snake.yml) -->
+<!-- Outputs light/dark SVGs to the "output" branch using Platane/snk -->
+## Contribution Snake
 
 <div align="center">
 
@@ -109,9 +125,9 @@ open_to: Collaborations · Open-source contributions · Internships
 
 </div>
 
-<br>
+<br><br>
 
-<!-- Contribution activity graph — auto-updates with your commit activity -->
+<!-- Contribution activity graph — auto-updates with commit activity -->
 <div align="center">
 
 [![Priyanshu's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=dreamwithpriyanshu&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=161b22&hide_border=true)](https://github.com/dreamwithpriyanshu)
@@ -120,14 +136,13 @@ open_to: Collaborations · Open-source contributions · Internships
 
 <br>
 
-<!-- Profile views counter + animated waving footer -->
+<!-- Profile views counter + animated waving gradient footer (capsule-render) -->
 <div align="center">
 
 <img src="https://komarev.com/ghpvc/?username=dreamwithpriyanshu&color=1f6feb&style=for-the-badge&label=PROFILE+VIEWS" />
 
 <br><br>
 
-<!-- Animated waving gradient footer — capsule-render with GitHub dark color scheme -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=120&section=footer" width="100%" />
 
 </div>
