@@ -1,47 +1,39 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const API_VERSION = "2026-03-10";
 const OUTPUT_DIR = path.join(process.cwd(), "assets");
 const BADGE_PATH = path.join(OUTPUT_DIR, "profile-visitors.svg");
-const SNAPSHOT_PATH = path.join(OUTPUT_DIR, "profile-visitors.json");
 
-function getRepoContext() {
+function getUsername() {
+  if (process.env.MOCK_PROFILE_RESPONSE) {
+    const payload = JSON.parse(process.env.MOCK_PROFILE_RESPONSE);
+    return payload.login ?? "dreamwithpriyanshu";
+  }
+
   const repository = process.env.GITHUB_REPOSITORY;
   if (!repository || !repository.includes("/")) {
     throw new Error("GITHUB_REPOSITORY must be set to owner/repo.");
   }
 
-  const [owner, repo] = repository.split("/");
-  return { owner, repo };
+  return repository.split("/")[0];
 }
 
-async function fetchTraffic() {
-  if (process.env.MOCK_TRAFFIC_RESPONSE) {
-    return JSON.parse(process.env.MOCK_TRAFFIC_RESPONSE);
+async function fetchProfile() {
+  if (process.env.MOCK_PROFILE_RESPONSE) {
+    return JSON.parse(process.env.MOCK_PROFILE_RESPONSE);
   }
 
-  const token = process.env.GITHUB_TOKEN;
-  if (!token) {
-    throw new Error("GITHUB_TOKEN is required unless MOCK_TRAFFIC_RESPONSE is set.");
-  }
-
-  const { owner, repo } = getRepoContext();
-  const response = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}/traffic/views`,
-    {
-      headers: {
-        Accept: "application/vnd.github+json",
-        Authorization: `Bearer ${token}`,
-        "User-Agent": "dreamwithpriyanshu-profile-visitors-badge",
-        "X-GitHub-Api-Version": API_VERSION,
-      },
+  const username = getUsername();
+  const response = await fetch(`https://api.github.com/users/${username}`, {
+    headers: {
+      Accept: "application/vnd.github+json",
+      "User-Agent": "dreamwithpriyanshu-profile-metric-badge",
     },
-  );
+  });
 
   if (!response.ok) {
     const body = await response.text();
-    throw new Error(`GitHub traffic API failed (${response.status}): ${body}`);
+    throw new Error(`GitHub profile API failed (${response.status}): ${body}`);
   }
 
   return response.json();
@@ -59,7 +51,7 @@ function escapeXml(value) {
 function buildBadge(label, value) {
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);
-  const labelWidth = Math.max(158, label.length * 7 + 22);
+  const labelWidth = Math.max(122, label.length * 7 + 22);
   const valueWidth = Math.max(52, value.length * 8 + 20);
   const totalWidth = labelWidth + valueWidth;
   const valueStart = labelWidth;
@@ -87,20 +79,11 @@ function buildBadge(label, value) {
 }
 
 async function main() {
-  const traffic = await fetchTraffic();
-  const snapshot = {
-    updatedAt: new Date().toISOString(),
-    source: "github-repository-traffic",
-    period: "last_14_days",
-    visitors: traffic.uniques ?? 0,
-    views: traffic.count ?? 0,
-    daily: Array.isArray(traffic.views) ? traffic.views : [],
-  };
-
-  const badge = buildBadge("PROFILE VISITORS 14D", String(snapshot.visitors));
+  const profile = await fetchProfile();
+  const followers = Number.isFinite(profile.followers) ? profile.followers : 0;
+  const badge = buildBadge("FOLLOWERS", String(followers));
 
   await mkdir(OUTPUT_DIR, { recursive: true });
-  await writeFile(SNAPSHOT_PATH, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
   await writeFile(BADGE_PATH, badge, "utf8");
 }
 
