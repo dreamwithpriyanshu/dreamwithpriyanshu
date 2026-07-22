@@ -71,9 +71,9 @@ open_to: Collaborations | Internships
 <!-- Footer -->
 <div align="center">
 
-<img src="./assets/profile-visitors.svg" alt="Profile visitors in the last 14 days" />
+<img src="./assets/profile-followers.svg" alt="GitHub followers" />
 
-<sub>GitHub traffic API unique visitors for the last 14 days.</sub>
+<sub>Public GitHub followers.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=100&section=footer" width="100%" />
 

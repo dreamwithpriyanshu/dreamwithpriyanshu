@@ -1,4 +1,4 @@
-name: Update Profile Metric Badge
+name: Update Followers Badge
 
 on:
   schedule:
@@ -8,14 +8,14 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/profile-metric.yml"
-      - "scripts/update-profile-metric.mjs"
+      - ".github/workflows/followers-badge.yml"
+      - "scripts/update-followers-badge.mjs"
 
 permissions:
   contents: write
 
 jobs:
-  update-profile-metric:
+  update-followers-badge:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -28,8 +28,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate profile metric badge
-        run: node scripts/update-profile-metric.mjs
+      - name: Generate followers badge
+        run: node scripts/update-followers-badge.mjs
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
@@ -37,10 +37,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-visitors.svg
+          git add assets/profile-followers.svg
           if git diff --cached --quiet; then
             echo "No badge changes to commit."
             exit 0
           fi
-          git commit -m "chore: update profile metric badge"
+          git commit -m "chore: update followers badge"
           git push

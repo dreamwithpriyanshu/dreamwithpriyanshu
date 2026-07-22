@@ -2,7 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const OUTPUT_DIR = path.join(process.cwd(), "assets");
-const BADGE_PATH = path.join(OUTPUT_DIR, "profile-visitors.svg");
+const BADGE_PATH = path.join(OUTPUT_DIR, "profile-followers.svg");
 
 function getUsername() {
   if (process.env.MOCK_PROFILE_RESPONSE) {
@@ -27,7 +27,7 @@ async function fetchProfile() {
   const response = await fetch(`https://api.github.com/users/${username}`, {
     headers: {
       Accept: "application/vnd.github+json",
-      "User-Agent": "dreamwithpriyanshu-profile-metric-badge",
+      "User-Agent": "dreamwithpriyanshu-followers-badge",
     },
   });
 
