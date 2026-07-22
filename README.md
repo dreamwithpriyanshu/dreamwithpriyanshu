@@ -14,7 +14,7 @@
 name: Priyanshu Bisht
 aka: Dream with Priyanshu
 philosophy: "Ship fast, learn faster, Carpie Diem"
-open_to: Collaborations · Internships
+open_to: Collaborations | Internships
 ```
 
 ---
@@ -24,7 +24,7 @@ open_to: Collaborations · Internships
 
 <div align="center">
 
-**Frontend** &nbsp;&nbsp; · &nbsp;&nbsp; **Backend** &nbsp;&nbsp; · &nbsp;&nbsp; **Languages** &nbsp;&nbsp; · &nbsp;&nbsp; **Tools**
+**Frontend** &nbsp;&nbsp; | &nbsp;&nbsp; **Backend** &nbsp;&nbsp; | &nbsp;&nbsp; **Languages** &nbsp;&nbsp; | &nbsp;&nbsp; **Tools**
 
 <a href="https://skillicons.dev">
 <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,python,java,git,github&theme=dark" />
@@ -41,14 +41,14 @@ open_to: Collaborations · Internships
 
 <!-- Streak stats -->
 <a href="https://github.com/dreamwithpriyanshu">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dreamwithpriyanshu&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=161b22&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dreamwithpriyanshu&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=161b22&ring=2ea043&fire=2ea043&currStreakLabel=7ee787&sideLabels=e6edf3&dates=8b949e" />
 </a>
 
 </div>
 
 ---
 
-<!-- Snake animation — generated daily via .github/workflows/snake.yml -->
+<!-- Snake animation - generated daily via .github/workflows/snake.yml -->
 ### Contribution Snake
 
 <div align="center">
@@ -64,14 +64,16 @@ open_to: Collaborations · Internships
 <!-- Activity Graph -->
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dreamwithpriyanshu&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=161b22&hide_border=true)](https://github.com/dreamwithpriyanshu)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dreamwithpriyanshu&bg_color=0d1117&color=e6edf3&line=22c55e&point=7ee787&area=true&area_color=0f2419&hide_border=true)](https://github.com/dreamwithpriyanshu)
 
 </div>
 
 <!-- Footer -->
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=dreamwithpriyanshu&color=1f6feb&style=for-the-badge&label=PROFILE+VIEWS" />
+<img src="./assets/profile-visitors.svg" alt="Profile visitors in the last 14 days" />
+
+<sub>GitHub traffic API unique visitors for the last 14 days.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=100&section=footer" width="100%" />
 
