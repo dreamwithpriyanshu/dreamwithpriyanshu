@@ -12,7 +12,7 @@
 
 ```yaml
 name: Priyanshu Bisht
-aka: Dream with Priyanshu
+aka: priyanshubishtme
 philosophy: "Ship fast, learn faster, Carpie Diem"
 open_to: Collaborations | Internships
 ```
