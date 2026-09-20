@@ -34,19 +34,7 @@ open_to: Collaborations | Internships
 
 ---
 
-<!-- GitHub Stats -->
-### GitHub Analytics
 
-<div align="center">
-
-<!-- Streak stats -->
-<a href="https://github.com/dreamwithpriyanshu">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dreamwithpriyanshu&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=161b22&ring=2ea043&fire=2ea043&currStreakLabel=7ee787&sideLabels=e6edf3&dates=8b949e" />
-</a>
-
-</div>
-
----
 
 <!-- Snake animation - generated daily via .github/workflows/snake.yml -->
 ### Contribution Snake
@@ -61,20 +49,3 @@ open_to: Collaborations | Internships
 
 ---
 
-<!-- Activity Graph -->
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=dreamwithpriyanshu&bg_color=0d1117&color=e6edf3&line=22c55e&point=7ee787&area=true&area_color=0f2419&hide_border=true)](https://github.com/dreamwithpriyanshu)
-
-</div>
-
-<!-- Footer -->
-<div align="center">
-
-<img src="./assets/profile-followers.svg" alt="GitHub followers" />
-
-<sub>Public GitHub followers.</sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=100&section=footer" width="100%" />
-
-</div>
