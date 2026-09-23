@@ -16,14 +16,7 @@
 
 <br/>
 
-## ✦ The Journey So Far
 
-> **Building:** Software Engineer Intern at [ElvoraGo](#)  
-> **Studying:** AI & Data Science at Graphic Era Hill University (CGPA: 9.48)  
-> **Philosophy:** I don't have it all figured out, but I'd rather try and adjust than wait for certainty.  
-> **Open To:** Collaborations, Open Source, and challenging Internships.
-
-<br/>
 
 ## ✦ The Arsenal
 
@@ -42,18 +35,9 @@
 | 🥛 **[AshaPure](https://priyanshubishtme.netlify.app/)** | A smart dairy e-commerce platform supporting shopping, checkout, subscriptions, and role-based access. Owned end-to-end. | `React` `Node.js` `MongoDB` |
 | 🚘 **[Arena Self-Driving](https://priyanshubishtme.netlify.app/)** | An autonomous highway driving simulator where an agent learns to drive with tabular SARSA reinforcement learning. | `Python` `Gymnasium` `FastAPI` |
 
-*(Explore the full story behind these projects on my [portfolio](https://priyanshubishtme.netlify.app/))*
 
 <br/>
 
-## ✦ Developer Analytics
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=priyanshubishtme&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0c10&title_color=F2B441&icon_color=F2B441" height="195" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyanshubishtme&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0c10&title_color=F2B441" height="195" alt="Top Languages" />
-</div>
-
-<br/>
 
 ## ✦ Contribution Activity
 
